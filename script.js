@@ -1,10 +1,10 @@
 function addTask() {
     const inputBox = document.querySelector('.input-area input[type="text"]');
-    const taskText = inputBox.value.trim();
+    const taskText = inputBox.value;
     const taskList = document.getElementById('addTask');
 
     if (taskText === '') {
-        alert("Please enter a Task !");
+        alert ("Please enter a Task !");
         return;
     }
 
@@ -12,7 +12,7 @@ function addTask() {
 
     li.textContent = taskText;
 
-    taskList.appendChild(li);
+    taskList.appendChild(li);  
 
     inputBox.value = '';
 }
